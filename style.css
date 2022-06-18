@@ -28,13 +28,17 @@ main:7px
 :root{
     --accent:#a55eea;
     --shade:#e4cff9;
+    --lightMain:#f6effd;
+    --blackSection:#15181B;
+    --blackText:#21132f;
 }
 html{
     font-size:10px;
 }
 body{
     font-family:'Roboto' , sans-serif;
-    color:#ffffff;
+    color:var(--lightMain);
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -103,7 +107,7 @@ Utilities
 }
 .section-black
 {
-    background-color:#15181B;
+    background-color:var(--blackSection);
 }
 /*
 #####################
@@ -171,7 +175,7 @@ How it works
 #####################
 */
 .section-how{
-    color:#21132f;
+    color:var(--blackText);
     margin-top:9.6rem;
     padding-bottom: 8rem;
 }
@@ -211,11 +215,12 @@ Features
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap:3.2rem;
+    margin-bottom:6.4rem;
 }
 .icon-box{
     font-size:3rem;
     color:var(--accent);
-    background-color:white;
+    background-color:var(--lightMain);
     padding:1.6rem;
     border-radius:100px;
     display:inline-block;
@@ -225,3 +230,61 @@ Features
     font-size:2.4rem;
     line-height: 1.2;
 }
+/*#####################
+Testimonials
+#####################
+*/
+.swiper-container {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+
+    background-color:var(--lightMain);
+    color:var(--blackText);
+    padding:4rem;
+    border-radius:7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+}
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right
+{
+    background-image: none;
+}
+.quote{
+    font-size:4rem;
+    color:var(--accent);
+    display:flex;
+    justify-content: end;
+    margin-bottom:0.8rem;
+}
+.quote-box
+{
+    display:flex;
+    justify-content: right;
+}
+.user-box{
+    margin-top:1.6rem;
+    display:flex;
+    align-items: center;
+    gap:1.2rem;
+}
+.user-info{
+
+}
+.user-name{
+    font-size:2rem;
+    line-height: 1;
+    color:var(--accent);
+}
+.user-photo{
+    width:6.4rem;
+    border-radius: 100px;
+}
+
+

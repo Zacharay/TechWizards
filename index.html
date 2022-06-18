@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1258931cf9.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link href="style.css" rel="stylesheet">
     <title>TechWizards</title>
 </head>
@@ -121,10 +125,150 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam ex ducimus pariatur!</p>
                     </li>
                 </ul>
+                <h1 class="secondary-header">What Clients Say</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <i class="fa-solid fa-quote-right quote"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius distinctio veniam labore architecto in laudantium maxime aspernatur sit sed cumque?</p>
+
+                            <div class="user-box">
+                                <img src="Images/user1.jpg" class="user-photo">
+                                <div>
+                                    <p class="user-name">Craig Hernandez</p>
+                                    <p>Software Developer</p>
+
+                                </div>
+                            </div> 
+                        </div>  
+                        <div class="swiper-slide ">
+                            <i class="fa-solid fa-quote-right quote"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius distinctio veniam labore architecto in laudantium maxime aspernatur sit sed cumque?</p>
+
+                            <div class="user-box">
+                                <img src="Images/user2.jpg" class="user-photo">
+                                <div>
+                                    <p class="user-name">Jerry Grayson</p>
+                                    <p>Content Creator</p>
+
+                                </div>
+                            </div> 
+                        </div>  
+                        <div class="swiper-slide ">
+                            <i class="fa-solid fa-quote-right quote"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius distinctio veniam labore architecto in laudantium maxime aspernatur sit sed cumque?</p>
+
+                            <div class="user-box">
+                                <img src="Images/user3.jpg" class="user-photo">
+                                <div>
+                                    <p class="user-name">Lucille Jordan</p>
+                                    <p>Graphic Designer</p>
+
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="swiper-slide ">
+                            <i class="fa-solid fa-quote-right quote"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius distinctio veniam labore architecto in laudantium maxime aspernatur sit sed cumque?</p>
+
+                            <div class="user-box">
+                                <img src="Images/user4.jpg" class="user-photo">
+                                <div>
+                                    <p class="user-name">Nina Jones</p>
+                                    <p>Software Developer/p>
+
+                                </div>
+                            </div> 
+                        </div>   
+                        <div class="swiper-slide ">
+                            <i class="fa-solid fa-quote-right quote"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius distinctio veniam labore architecto in laudantium maxime aspernatur sit sed cumque?</p>
+
+                            <div class="user-box">
+                                <img src="Images/user5.jpg" class="user-photo">
+                                <div>
+                                    <p class="user-name">Ernest Arnold</p>
+                                    <p>Content Creator</p>
+
+                                </div>
+                            </div> 
+                        </div>  
+                        <div class="swiper-slide ">
+                            <i class="fa-solid fa-quote-right quote"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius distinctio veniam labore architecto in laudantium maxime aspernatur sit sed cumque?</p>
+
+                            <div class="user-box">
+                                <img src="Images/user6.jpg" class="user-photo">
+                                <div>
+                                    <p class="user-name">Wade Larson</p>
+                                    <p>Game Designer</p>
+
+                                </div>
+                            </div> 
+                        </div>    
+                        <div class="swiper-slide ">
+                            <i class="fa-solid fa-quote-right quote"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius distinctio veniam labore architecto in laudantium maxime aspernatur sit sed cumque?</p>
+
+                            <div class="user-box">
+                                <img src="Images/user7.jpg" class="user-photo">
+                                <div>
+                                    <p class="user-name">Sheila Terry</p>
+                                    <p>Graphic Designer</p>
+
+                                </div>
+                            </div> 
+                        </div>   
+                        <div class="swiper-slide ">
+                            <i class="fa-solid fa-quote-right quote"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius distinctio veniam labore architecto in laudantium maxime aspernatur sit sed cumque?</p>
+
+                            <div class="user-box">
+                                <img src="Images/user8.jpg" class="user-photo">
+                                <div>
+                                    <p class="user-name">Lillie Snyder</p>
+                                    <p>Web Designer</p>
+
+                                </div>
+                            </div> 
+                        </div>  
+                        <div class="swiper-slide ">
+                            <i class="fa-solid fa-quote-right quote"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius distinctio veniam labore architecto in laudantium maxime aspernatur sit sed cumque?</p>
+
+                            <div class="user-box">
+                                <img src="Images/user9.jpg" class="user-photo">
+                                <div>
+                                    <p class="user-name">Penny Davis</p>
+                                    <p>Software Developer</p>
+
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
             </section>
         </div>
     </div>  
     
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows : true
+  },
+        loop: true
+});
+    </script>
 </body>
 </html>
